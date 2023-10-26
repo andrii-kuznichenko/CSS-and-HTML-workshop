@@ -2,53 +2,112 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: 'Rubik', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-image:url(http://bit.ly/2gPLxZ4);
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased; 
+}
+iframe{
+    border: none;
+}
 nav {
-    border: 2px solid green;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: #1f1d20ca;
+    padding: 1rem;
 }
 
 .nav-left {
-    border: 2px solid green;
+    display: flex;
+    align-items: flex-start;
+    margin-top: -1.5rem;
+}
+.nav-right{
     display: flex;
     align-items: center;
 }
 
-.nav-right {
-    border: 2px solid green;
-}
-
-ul {
-    border: 2px solid green;
+.nav-right ul {
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 1rem;
 }
 
-li {
-    border: 2px solid green;
+.nav-right a{
+    display: flex;
+    align-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: #803E2F;
+    font-weight: 700;
 }
-
-header {
-    border: 2px solid orange;
+.nav-right a:hover{
+    transition: 0.3s;
+    font-size: 26px;
+    color: white;
+}
+header{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+#white-box{
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 3rem;
+    background-color: rgba(255, 255, 255, 0.606);
+    border-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+#white-box > p{
+    max-width: 40rem;
+    font-family: 'Rancho', cursive;
+    font-size: 28px;
+    color: #1F1D20;
+}
+#white-box > h1{
+    font-family: 'Rancho', cursive;
+    font-size: 64px;
+    color: #1F1D20;
 }
 
 #duck {
-    border: 2px solid yellow;
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #3e3d386d;
+    margin: 6rem;
+    border-radius: 70px;
+    padding: 4rem;
 }
 
 .text {
-    border: 2px solid yellow;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
-
-.text p {
-    border: 2px solid yellow;
+#image-duck{
+    height: 300px;
 }
-
-.duck {
-    border: 2px solid yellow;
-}
-
 #emergency {
     border: 2px solid blue;
 }
