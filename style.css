@@ -109,26 +109,28 @@ header{
     height: 300px;
 }
 #emergency {
-    border: 2px solid blue;
+    color: white;
 }
 
 .grid-container {
-    border: 2px solid blue;
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    grid-gap: 3px;
-    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 30%;
     margin: 0 auto;
 
 }
-
+.icon{
+    width: 100px;
+    height: 100px;
+}
 .grid-item {
-    border: 2px solid pink;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
-
+    padding: 2rem;
+    border: 1px solid #1F1D20;
+    background-color: white;
 }
 
 footer {
